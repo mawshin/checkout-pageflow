@@ -1,0 +1,52 @@
+// =====================
+// Component - Products 
+// =====================
+
+.c-products {
+	border-top: 1px solid $grey;
+	padding-top: 1rem;
+
+	[class^="o-col--"] {
+		margin-bottom: 0.625rem;
+	}
+}
+
+.c-products--card {
+	background-color: white;
+	height: 100%;
+}
+
+.c-products--thumb {
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	width: 70%;
+	padding-top: 0.625rem;
+
+	> img {
+		object-fit: cover;
+		max-height: 200px;
+		min-height: 100px;
+	}
+}
+
+.c-products--details {
+	padding: 0.625rem;
+}
+
+.c-products--details__title {
+	color: darken($grey, 30%);
+	font-size: 1.125rem;
+	font-weight: bold;
+	margin-bottom: 0.3125rem;
+}
+
+.c-products--details__desc {
+	color: darken($grey, 15%);
+	margin-bottom: 0.3125rem;
+}
+
+.c-products--details__price {
+	font-weight: bold;
+	font-size: 1.125rem;
+}

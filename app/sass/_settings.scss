@@ -1,0 +1,107 @@
+// ==========
+// Settings
+// ==========
+
+// Grids
+@import "./node_modules/susy/sass/susy";
+$susy: (
+  global-box-sizing: border-box,
+);
+
+$grid-12: (
+  gutters: 0.15,
+  columns: 12
+);
+
+// Values
+$nav-height: 63px;
+$full-height: 100vh;
+
+// Colours
+$light-grey: #efefef;
+$grey: #dedede;
+$dark-grey: #2a2d35;
+
+$black-alpha1: rgba(black, 0.1);
+$black-alpha3: rgba(black, 0.3);
+$black-alpha5: rgba(black, 0.5);
+$white-alpha4: rgba(white, 0.4);
+$white-alpha9: rgba(white, 0.9);
+
+// Fonts
+$sans-serif: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+$serif: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+
+// Z-index
+$layers: (
+  generic,
+  container,
+  canvas,
+  header,
+  footer,
+  nav-toogle,
+  nav-lists,
+);
+
+// Breakpoints
+@import 'lib/mappy-breakpoints';
+$breakpoints: (
+  xxs:            360px,
+  xsmall:         480px,
+  small:          590px,
+  medium:         640px,
+  large:          768px,
+  xlarge:         992px,
+  xxl:            1200px,
+  xxxl:           1440px,
+  max:            1600px,
+  ipadLandscape:  1024px,
+  ipadPortrait:   768px,
+);
+
+// Set maps for typography responsive sizing
+@import "./node_modules/typi/scss/typi";
+$typi: (
+  base: (
+    null: (16px, 1.4)
+  ),
+  h1-map: (
+    null: (2em, 1.2),
+    large: (2.125em, 1.2)
+  ),
+  h2-map: (
+    null: (1.725em, 1.2),
+    large: (2em, 1.2)
+  ),
+  h3-map: (
+    null: (1.25em, 1.2),
+    large: (1.5em, 1.2)
+  ),
+  h4-map: (
+    null: 1.25em,
+    large: 1.5em
+  ),
+  h5-map: (
+    null: 1em,
+    large: 1.25em
+  ),
+  h6-map: (
+    null: 1em,
+    large: 1.125em
+  ),
+  paragraph-map: (
+    null: 1em,
+    large: 1.375em
+  ),
+  small-map: (
+    null: 0.75em
+  ),
+  sup-map: (
+    null: 0.875em
+  )
+);
+
+// Misc variables
+$border-radius: 0.25rem;
+$corner-radius: 2rem;
+$corner-radius-small: 1rem;

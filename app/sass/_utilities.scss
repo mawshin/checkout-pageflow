@@ -1,0 +1,27 @@
+// ==========
+// Utilities
+// ==========
+
+.u-clearfix {
+    @include cf;
+}
+
+.u-text--left {
+    text-align: left;
+}
+
+.u-text--right {
+    text-align: right;
+}
+
+.u-float--left {
+    float: left;
+}
+
+.u-float--right {
+    float: right;
+}
+
+.u-text--white {
+	color: white;
+}

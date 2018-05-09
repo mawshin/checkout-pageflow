@@ -1,0 +1,98 @@
+// ==========
+// Base
+// ==========
+html {
+    @include typi-base();
+
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+
+    &:before {
+        box-sizing: inherit;
+    }
+
+    &:after {
+        box-sizing: inherit;
+    }
+}
+
+body {
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    background-color: $light-grey;
+    color: $dark-grey;
+    font-family: $sans-serif;
+}
+
+// Elements
+h1 {
+    @include typi(h1-map);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    @include typi(h2-map);
+    margin-bottom: 1rem;
+}
+
+h3 {
+    @include typi(h3-map);
+    margin-bottom: 1rem;
+}
+
+h4 {
+    @include typi(h4-map);
+    margin-bottom: 1rem;
+}
+
+h5 {
+    @include typi(h5-map);
+    margin-bottom: 1rem;
+}
+
+h6 {
+    @include typi(h6-map);
+    margin-bottom: 1rem;
+}
+
+small {
+    @include typi(small-map);
+}
+
+p {
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+a {
+    font-weight: bold;
+    outline: 0;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+strong {
+    font-weight: bold;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: $light-grey;
+}
+
+.img-responsive {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}

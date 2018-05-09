@@ -1,0 +1,49 @@
+// ======================
+// Component - Pagination 
+// ======================
+
+.pagination {
+	list-style: none;
+	padding-left: 0;
+	float: right;
+
+	li {
+		display: inline-block;
+		margin-left: 0.625rem;
+		background-color: white;
+		padding: 0.625rem;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&.active {
+			color: $grey;
+		}
+
+		a {
+			cursor: pointer;
+		}
+	}
+
+	.previous {
+		background-color: transparent;
+
+		&.disabled {
+			color: $grey;
+		}
+	}
+
+	.next {
+		background-color: transparent;
+
+		&.disabled {
+			color: $grey;
+		}
+	}
+
+	.break-me {
+		color: $dark-grey;
+		text-decoration: none; 
+	}
+}

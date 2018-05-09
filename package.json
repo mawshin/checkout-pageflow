@@ -1,0 +1,36 @@
+{
+  "name": "website.name",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Nil",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "TBC"
+  },
+  "author": "author",
+  "license": "ISC",
+  "homepage": "index.html",
+  "devDependencies": {
+    "browser-sync": "^2.11.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.4.5",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.0",
+    "gulp-newer": "^1.1.0",
+    "gulp-postcss": "^6.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^2.1.2",
+    "path": "^0.12.7",
+    "postcss-reporter": "^3.0.0",
+    "postcss-scss": "^0.4.1",
+    "stylelint": "^7.10.1",
+    "susy": "^2.2.12",
+    "typi": "^3.1.0"
+  }
+}
