@@ -1,5 +1,3 @@
-// JavaScript Document
-
 /* Create a closure to maintain scope of the '$' and remain compatible with other frameworks.  */
 (function ($) {
 
@@ -12,24 +10,7 @@
 		
 		
 		$(function () {
-			var modal = $('.modal');
-
-			if($('.jsCarouselSlide').length > 0) {
-				$('.modal-backdrop').click(function(e) {
-					$modal.hide();
-				});
-
-				$('.c-modal--close').click(function(e) {
-					modal.hide();
-				});
-
-				$('.jsCarouselSlide').click(function(e) {
-					$('#captionModal').show();
-					caption = $(this).find('img').attr('aria-describedby');
-					$('.c-slider--caption').text(caption);
-				});
-
-			}
+			
 			
 		});
 		
