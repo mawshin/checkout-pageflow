@@ -91,26 +91,13 @@ gulp.task('css-concat', ['sass'], function () {
 });
 
 gulp.task('sass', function () {
-    var scssStream,
-    cssStream;
-
-    scssStream = gulp.src(['app/sass/styles.scss'])
-    	.pipe(sourcemaps.init())
-    	.pipe(sass({
-    		includePaths: ['scss'],
-    		onError: browserSync.notify
-    	}))
-    	.pipe(sourcemaps.write('./'))
-        .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
-    	.pipe(gulp.dest('app/css/'));
-
-    cssStream = gulp.src(['app/css/bootstrap.min.css', 'app/css/ie10-viewport-bug-workaround.css']);
-
-    return merge(scssStream, cssStream)
-        .pipe(concat('global.css'))
+    return gulp.src(['app/sass/styles.scss'])
         .pipe(sourcemaps.init())
-        .pipe(cssmin({compatibility: 'ie8'}))
-        .pipe(sourcemaps.write('./'))
+        .pipe(sass({
+            includePaths: ['scss']
+        }))
+        .pipe(sourcemaps.write())
+        .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
         .pipe(gulp.dest('app/css/'));
 });
 
@@ -130,7 +117,7 @@ gulp.task('sass-prod', function () {
  * Minify custom js scripts
  */
 gulp.task('scripts', function () {
-    return gulp.src(['app/js/lib/jquery-1.10.2.min.js', 'app/js/init.js'])
+    return gulp.src(['app/js/lib/jquery-1.12.4.min.js', 'app/js/lib/rem.js', 'app/js/init.js'])
         .pipe(concat('app.min.js'))
         .pipe(gulp.dest('app/js/'));
 });
