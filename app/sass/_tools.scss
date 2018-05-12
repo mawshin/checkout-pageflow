@@ -50,6 +50,13 @@
   }
 }
 
+@mixin responsive-bg-image($image-width, $image-height) {
+  background-size: 100%;
+  height: 0;
+  padding-bottom: percentage($image-height / $image-width);
+  display: block;
+}
+
 // Functions
 @function layer-index($layer) {
   @return index($layers, $layer);

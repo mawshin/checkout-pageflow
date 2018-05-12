@@ -6,7 +6,36 @@ header {
 }
 
 .c-logo {
-	background: url("//via.placeholder.com/200x120?text=Logo+BOOSTED") 0 0 no-repeat;
-	width: 100%;
-	padding-top: 60%;
+	max-width: 165px;
+}
+
+.c-logo--img {
+	background: url("//via.placeholder.com/165x40?text=Logo+BOOSTED") 0 0 no-repeat;
+	text-indent: -9999px;
+
+	// substitute for your image dimensions
+    @include responsive-bg-image(165, 40);
+}
+
+.c-breadcrumb--list {
+	@include cf;
+
+	list-style: none;
+	padding-left: 0;
+
+	li {
+		float: left;
+
+		&:before {
+			content: ">";
+			margin: 0 0.625rem;
+		}
+
+		&:first-child {
+			&:before {
+				content: "";
+				margin-left: 0;
+			}
+		}
+	}
 }
