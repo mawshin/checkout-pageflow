@@ -1,11 +1,12 @@
 // =====================
 // Component - Header 
 // =====================
-.c-header {
-    position: relative;
-
-    h5 {
-        margin-bottom: 0;
-    }
+header {
+	@include cf;
 }
 
+.c-logo {
+	background: url("//via.placeholder.com/200x120?text=Logo+BOOSTED") 0 0 no-repeat;
+	width: 100%;
+	padding-top: 60%;
+}
