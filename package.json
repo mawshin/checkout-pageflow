@@ -33,5 +33,8 @@
     "stylelint": "^7.10.1",
     "susy": "^2.2.12",
     "typi": "^3.1.0"
+  },
+  "dependencies": {
+    "sassy-inputs": "^1.0.6"
   }
 }
