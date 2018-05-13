@@ -45,80 +45,82 @@
                 <div class="o-divider">
                     <div class="o-divider--txt">OR</div>
                 </div>
-                
-                <div class="o-form--group">
-                    <h5 class="o-header">Contact information</h5>
-                    
-                    <div class="o-field--group">
-                        <div class="o-col--12">
-                            <input placeholder="Email" data-autofocus="true" aria-required="true" size="30" type="email" name="checkout_email" id="checkout_email">
-                        </div>
-                    </div>
 
-                    <input type="checkbox" id="subscribe" name="groupname" value="Yes subscribe to newsletter">
-                    <label for="subscribe">Subscribe to our newsletter</label>
-                </div>
-                
-                <div class="o-form--group u-mbn">
-                    <h5 class="o-header">Shipping address</h5>
-
-                    <div class="o-field--group">
-                        <div class="o-col--6">
-                            <input placeholder="First name" data-autofocus="true" aria-required="true" size="30" type="text" name="first-name" id="first-name">
-                        </div>
-                        <div class="o-col--6">
-                            <input placeholder="Last name" data-autofocus="true" aria-required="true" size="30" type="text" name="last-name" id="last-name">
-                        </div>
-                    </div>
-                    <div class="o-field--group">
-                        <div class="o-col--12">
-                            <input placeholder="Company (optional)" data-autofocus="true" aria-required="true" size="30" type="text" name="company" id="company">
-                        </div>
-                    </div>
-                    <div class="o-field--group">
-                        <div class="o-col--8">
-                            <input placeholder="Address" data-autofocus="true" aria-required="true" size="30" type="text" name="address" id="address">
-                        </div>
-                        <div class="o-col--4">
-                            <input placeholder="Apt, suite, etc. (optional)" data-autofocus="true" aria-required="true" size="30" type="text" name="Apt" id="apt">
-                        </div>
-                    </div>
-                    <div class="o-field--group">
-                        <div class="o-col--12">
-                            <input placeholder="City" data-autofocus="true" aria-required="true" size="30" type="text" name="city" id="city">
-                        </div>
-                    </div>
-                    <div class="o-field--group">
-                        <div class="o-col--6">
-                            <div class="o-select-wrap">
-                                <label class="o-select--label" for="shipping-address-country">Country</label>
-                                <select aria-required="true" for="shipping-address-country">
-                                    <option value="singapore">Singapore</option>
-                                    <option value="united states">United States</option>
-                                    <option value="canada">Canada</option>
-                                </select>
+                <form>
+                    <div class="o-form--group">
+                        <h5 class="o-header">Contact information</h5>
+                        
+                        <div class="o-field--group">
+                            <div class="o-col--12">
+                                <input placeholder="Email" data-autofocus="true" aria-required="true" size="30" type="email" name="checkout_email" id="checkout_email">
                             </div>
                         </div>
-                        <div class="o-col--6">
-                            <input placeholder="Postal code" data-autofocus="true" aria-required="true" size="30" type="text" name="postal-code" id="postal-code">
-                        </div>
-                    </div>
-                    <div class="o-field--group">
-                        <div class="o-col--12">
-                            <input placeholder="Phone (required)" data-autofocus="true" aria-required="true" size="30" type="number" name="phone" id="phone">
-                        </div>
+
+                        <input type="checkbox" id="subscribe" name="groupname" value="Yes subscribe to newsletter">
+                        <label for="subscribe">Subscribe to our newsletter</label>
                     </div>
                     
-                    <div class="o-field--group o-form-checkbox">
-                        <input type="checkbox" id="save-info" value="Save information">
-                        <label for="save-info">Save this information for next time</label>
-                    </div>
+                    <div class="o-form--group u-mbn">
+                        <h5 class="o-header">Shipping address</h5>
 
-                    <div class="o-field--group u-clearfix">
-                        <a class="c-form--return" href="#">&#12296; Return to cart</a>
-                        <button class="c-form--next" id="jsShipping">Continue to shopping method</button>
-                    </div>
-                </div>
+                        <div class="o-field--group">
+                            <div class="o-col--6">
+                                <input placeholder="First name" data-autofocus="true" aria-required="true" size="30" type="text" name="first-name" id="first-name">
+                            </div>
+                            <div class="o-col--6">
+                                <input placeholder="Last name" data-autofocus="true" aria-required="true" size="30" type="text" name="last-name" id="last-name">
+                            </div>
+                        </div>
+                        <div class="o-field--group">
+                            <div class="o-col--12">
+                                <input placeholder="Company (optional)" data-autofocus="true" aria-required="true" size="30" type="text" name="company" id="company">
+                            </div>
+                        </div>
+                        <div class="o-field--group">
+                            <div class="o-col--8">
+                                <input placeholder="Address" data-autofocus="true" aria-required="true" size="30" type="text" name="address" id="address">
+                            </div>
+                            <div class="o-col--4">
+                                <input placeholder="Apt, suite, etc. (optional)" data-autofocus="true" aria-required="true" size="30" type="text" name="Apt" id="apt">
+                            </div>
+                        </div>
+                        <div class="o-field--group">
+                            <div class="o-col--12">
+                                <input placeholder="City" data-autofocus="true" aria-required="true" size="30" type="text" name="city" id="city">
+                            </div>
+                        </div>
+                        <div class="o-field--group">
+                            <div class="o-col--6">
+                                <div class="o-select-wrap">
+                                    <label class="o-select--label" for="shipping-address-country">Country</label>
+                                    <select aria-required="true" for="shipping-address-country">
+                                        <option value="singapore">Singapore</option>
+                                        <option value="united states">United States</option>
+                                        <option value="canada">Canada</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="o-col--6">
+                                <input placeholder="Postal code" data-autofocus="true" aria-required="true" size="30" type="text" name="postal-code" id="postal-code">
+                            </div>
+                        </div>
+                        <div class="o-field--group">
+                            <div class="o-col--12">
+                                <input placeholder="Phone (required)" data-autofocus="true" aria-required="true" size="30" type="number" name="phone" id="phone">
+                            </div>
+                        </div>
+                        
+                        <div class="o-field--group o-form-checkbox">
+                            <input type="checkbox" id="save-info" value="Save information">
+                            <label for="save-info">Save this information for next time</label>
+                        </div>
+
+                        <div class="o-field--group u-clearfix">
+                            <a class="c-form--return" href="#">&#12296; Return to cart</a>
+                            <button class="c-form--next" id="jsShipping">Continue to shopping method</button>
+                        </div>
+                    </div>    
+                </form>
                 
                 <hr />
                 <footer>
@@ -128,7 +130,6 @@
                         <li><a href="#">Terms of service</a></li>
                     </ul>
                 </footer>
-
             </div>
 
             <!-- start: right column -->
