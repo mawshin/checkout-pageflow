@@ -10,7 +10,7 @@ header {
 }
 
 .c-logo--img {
-	background: url("//via.placeholder.com/165x40?text=Logo+BOOSTED") 0 0 no-repeat;
+	background: url("//via.placeholder.com/165x40?text=LOGO+BOOSTED") 0 0 no-repeat;
 	text-indent: -9999px;
 
 	// substitute for your image dimensions
@@ -28,16 +28,26 @@ header {
 
 		float: left;
 
-		&:before {
-			content: ">";
-			margin: 0 0.625rem;
-		}
-
-		&:first-child {
+		&:not(:first-child) {
 			&:before {
-				content: "";
-				margin: 0;
+				content: ">";
+				margin: 0 0.625rem;
 			}
+		}
+	}
+}
+
+.c-payment--list {
+	@include cf;
+
+	list-style: none;
+	padding-left: 0;
+
+	li {
+		float: left;
+
+		&:not(:first-child) {
+			margin-left: 0.3125rem;
 		}
 	}
 }

@@ -19,8 +19,13 @@ $full-height: 100vh;
 
 // Colours
 $light-grey: #f1f2f3;
-$grey: #dedede;
-$dark-grey: #2a2d35;
+$grey: #eaebec;
+$dark-grey: #737278;
+
+$blue: #88d4dd;
+$dark-blue: #74d3de;
+
+$orange: #ff3a00;
 
 $black-alpha1: rgba(black, 0.1);
 $black-alpha3: rgba(black, 0.3);
@@ -78,12 +83,12 @@ $typi: (
     large: (1.5em, 1.2)
   ),
   h4-map: (
-    null: 1.25em,
-    large: 1.5em
+    null: (1.125em, 1.2),
+    large: (1.25em, 1.2)
   ),
   h5-map: (
-    null: 1em,
-    large: 1.25em
+    null: (1em, 1.2),
+    large: (1.125em, 1.2)
   ),
   h6-map: (
     null: 1em,
@@ -102,6 +107,10 @@ $typi: (
   ),
   sup-map: (
     null: 0.875em
+  ),
+  footer-map: (
+    null: 0.6875em,
+    large: 0.75em
   )
 );
 

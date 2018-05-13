@@ -1,6 +1,13 @@
 // ==========
 // Base
 // ==========
+
+// Form
+$sassy-base-color: darken(#eaebec, 10%);
+$sassy-accent-color: #74d3de;
+
+@import "node_modules/sassy-inputs/sass/main";
+
 html {
     @include typi-base();
 
@@ -73,8 +80,9 @@ p {
 }
 
 a {
-    font-weight: bold;
     outline: 0;
+    color: $blue;
+    text-decoration: none;
 
     &:focus {
         outline: 0;
@@ -92,7 +100,93 @@ ul, ol {
 hr {
     border: 0;
     height: 1px;
-    background: $light-grey;
+    background: $grey;
+}
+
+input[type=submit],
+input[type=button],
+button {
+    @include sassy-button;
+
+    background-color: $orange;
+    color: white;
+}
+
+input[type=text],
+input[type=url],
+input[type=email],
+input[type=password],
+input[type=number] {
+    @include sassy-text;
+}
+
+textarea {
+    @include sassy-textarea;
+}
+
+.o-select-wrap {
+    @include sassy-select;
+
+    select {
+        font-size: 0.75rem;
+        padding-top: 1.125rem;
+        padding-bottom: 0.38rem;
+    }
+}
+
+.o-select--label {
+    font-size: 0.625rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-top: 0.3em;
+    padding: 0 0.75rem;
+    z-index: 1;
+    user-select: none;
+    transform: translateY(3px);
+    pointer-events: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+input[type=checkbox] {
+    @include sassy-checkbox;
+    
+    + label {
+        &::before {
+            background-color: white;
+            border: 1px solid $grey;
+        }
+    }
+
+    &:focus {
+        + label {
+            &::before {
+                box-shadow: none;
+            }
+        }
+    }
+
+    &:checked {
+        + label {
+            &::after {
+                content: '✓';
+                border: 0;
+                transform: none;
+                color: white;
+            }
+
+            &::before {
+                background-color: $blue;
+                border: 1px solid $dark-blue;
+            }
+        }
+    }
+}
+
+input[type=radio] {
+    @include sassy-radio;
 }
 
 .img-responsive {

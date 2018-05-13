@@ -41,10 +41,6 @@
         margin-left: -0.9375rem;
         margin-right: -0.9375rem;
     }
-
-    [class^="o-col"] {
-        margin-bottom: 0.9375rem;
-    }
 }
 
 .o-col--1 {
@@ -392,4 +388,51 @@
 .o-flex {
     display: flex;
     flex-wrap: wrap;
+}
+
+.o-form--group {
+    @include mappy-bp(large) {
+        margin-bottom: 3rem;
+    }
+
+    margin-bottom: 1.5rem;
+}
+
+.o-field--group {
+    @include cf;
+}
+
+.o-header {
+    margin-top: 0.65rem;
+    font-weight: normal;
+    color: #333333;
+}
+
+.o-divider {
+    text-align: center;
+    position: relative;
+    font-size: 0.75rem;
+    color: #afa7a5;
+
+    &:before {
+        @include vertical-align(absolute);
+
+        content: "";
+        width: 100%;
+        height: 2px;
+        left: 0;
+        background-color: $grey;
+        z-index: -1;
+    }
+}
+
+.o-divider--txt {
+    background-color: white;
+    padding: 0.3125rem 0.625rem;
+    display: inline-block;
+}
+
+.o-form-checkbox {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
 }

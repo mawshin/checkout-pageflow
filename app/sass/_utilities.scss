@@ -6,6 +6,10 @@
     @include cf;
 }
 
+.u-mbn {
+	margin-bottom: 0;
+}
+
 .u-text--left {
     text-align: left;
 }
@@ -24,4 +28,18 @@
 
 .u-text--white {
 	color: white;
+}
+
+.u-lowercase {
+    text-transform: lowercase;
+}
+
+.u-uppercase {
+    text-transform: uppercase;
+}
+
+.u-flexbox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
