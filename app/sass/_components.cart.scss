@@ -1,0 +1,96 @@
+// =====================
+// Component - Cart 
+// =====================
+
+.c-cart--details {
+	background-color: $light-grey;
+	position: absolute;
+	top: 0;
+	right: 15px;
+	height: 100%;
+	padding-left: 2rem;
+	padding-right: 1rem;
+}
+
+.c-cart--list {
+	list-style: none;
+	padding-left: 0;
+	margin-top: 2rem;
+
+	li {
+		@include cf;
+
+		position: relative;
+		display: flex;
+
+		&:not(:first-child) {
+			margin-top: 1rem;
+		}
+	}
+}
+
+.c-cart--product {
+	@include mappy-bp(large) {
+		margin-right: 2rem;
+	}
+
+	width: 60px;
+	height: 60px;
+	border-radius: 6px;
+	border: 1px solid $grey;
+	position: relative;
+	float: left;
+	margin-right: 1rem;
+}
+
+.c-cart--product__img {
+	border-radius: 6px;
+	position: relative;
+	overflow: hidden;
+}
+
+.c-cart--product__quantity {
+	background-color: darken($grey, 10%);
+	color: white;
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	font-size: 0.75rem;
+	padding: 0.3125rem 0.5625rem;
+	border-radius: 50%; 
+}
+
+.c-cart--product__details {
+	@include cf;
+
+	font-weight: bold;
+	font-size: 0.875rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex: 1;
+
+	> div {
+		flex: 2;
+
+		&.c-cart--product__price {
+			flex: 1;
+		}
+	}
+}
+
+.c-cart--product__desc {
+	color: darken($grey, 20%);
+	font-size: 0.75rem;
+	font-weight: normal;
+}
+
+.c-cart--product__price {
+	text-align: center;
+	
+	strike {
+		display: block;
+		color: darken($grey, 20%);
+		font-size: 0.75rem;
+	}
+}
