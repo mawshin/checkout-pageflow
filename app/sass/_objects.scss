@@ -17,10 +17,6 @@
         width: 1170px;
     }
 
-    @include mappy-bp(xxxl) {
-        width: 1380px;
-    }
-
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     margin-right: auto;
@@ -387,7 +383,12 @@
 
 .o-flex {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+
+    > [class^="o-col--"] {
+        display: flex;
+        flex-flow: column;
+    }
 }
 
 .o-form--group {

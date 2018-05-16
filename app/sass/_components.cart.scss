@@ -3,19 +3,25 @@
 // =====================
 
 .c-cart--details {
-	background-color: $light-grey;
-	position: absolute;
-	top: 0;
-	right: 15px;
-	height: 100%;
+	position: relative;
 	padding-left: 2rem;
 	padding-right: 1rem;
+	
+	&:before {
+		content: "";
+		background-color: $light-grey;
+		position: absolute;
+		top: -2rem;
+		left: 0;
+		height: 100%;
+		width: 500%;
+		border-left: 1px solid darken($grey, 15%);
+	}
 }
 
 .c-cart--list {
 	list-style: none;
 	padding-left: 0;
-	margin-top: 2rem;
 
 	li {
 		@include cf;

@@ -14,170 +14,172 @@
 </head>
 
 <body>
-    <div class="o-container">
-        <!-- start: main grid -->
-        <section class="o-row o-flex">
-            <!-- start: left column -->
-            <div class="o-col--7">
-                <!-- start: Header section -->
-                <header>
-                    <div class="c-logo">
-                        <div class="c-logo--img">BOOSTED</div>
+    <main>
+        <div class="o-container">
+            <!-- start: main grid -->
+            <section class="o-row o-flex">
+                <!-- start: left column -->
+                <div class="o-col--7">
+                    <!-- start: Header section -->
+                    <header>
+                        <div class="c-logo">
+                            <div class="c-logo--img">BOOSTED</div>
+                        </div>
+
+                        <div class="c-breadcrumb">
+                            <ul class="c-breadcrumb--list">
+                                <li>Cart</li>
+                                <li>Customer information</li>
+                                <li>Shipping method</li>
+                                <li>Payment method</li>
+                            </ul>
+                        </div>
+
+                        <div class="c-payment">
+                            <ul class="c-payment--list">
+                                <li><button>Paypal</button></li>
+                                <li><button>amazon pay</button></li>
+                            </ul>
+                        </div>
+                    </header>
+
+                    <div class="o-divider">
+                        <div class="o-divider--txt">OR</div>
                     </div>
 
-                    <div class="c-breadcrumb">
-                        <ul class="c-breadcrumb--list">
-                            <li>Cart</li>
-                            <li>Customer information</li>
-                            <li>Shipping method</li>
-                            <li>Payment method</li>
-                        </ul>
-                    </div>
-
-                    <div class="c-payment">
-                        <ul class="c-payment--list">
-                            <li><button>Paypal</button></li>
-                            <li><button>amazon pay</button></li>
-                        </ul>
-                    </div>
-                </header>
-
-                <div class="o-divider">
-                    <div class="o-divider--txt">OR</div>
-                </div>
-
-                <form>
-                    <div class="o-form--group">
-                        <h5 class="o-header">Contact information</h5>
-                        
-                        <div class="o-field--group">
-                            <div class="o-col--12">
-                                <input placeholder="Email" data-autofocus="true" aria-required="true" size="30" type="email" name="checkout_email" id="checkout_email">
-                            </div>
-                        </div>
-
-                        <input type="checkbox" id="subscribe" name="groupname" value="Yes subscribe to newsletter">
-                        <label for="subscribe">Subscribe to our newsletter</label>
-                    </div>
-                    
-                    <div class="o-form--group u-mbn">
-                        <h5 class="o-header">Shipping address</h5>
-
-                        <div class="o-field--group">
-                            <div class="o-col--6">
-                                <input placeholder="First name" data-autofocus="true" aria-required="true" size="30" type="text" name="first-name" id="first-name">
-                            </div>
-                            <div class="o-col--6">
-                                <input placeholder="Last name" data-autofocus="true" aria-required="true" size="30" type="text" name="last-name" id="last-name">
-                            </div>
-                        </div>
-                        <div class="o-field--group">
-                            <div class="o-col--12">
-                                <input placeholder="Company (optional)" data-autofocus="true" aria-required="true" size="30" type="text" name="company" id="company">
-                            </div>
-                        </div>
-                        <div class="o-field--group">
-                            <div class="o-col--8">
-                                <input placeholder="Address" data-autofocus="true" aria-required="true" size="30" type="text" name="address" id="address">
-                            </div>
-                            <div class="o-col--4">
-                                <input placeholder="Apt, suite, etc. (optional)" data-autofocus="true" aria-required="true" size="30" type="text" name="Apt" id="apt">
-                            </div>
-                        </div>
-                        <div class="o-field--group">
-                            <div class="o-col--12">
-                                <input placeholder="City" data-autofocus="true" aria-required="true" size="30" type="text" name="city" id="city">
-                            </div>
-                        </div>
-                        <div class="o-field--group">
-                            <div class="o-col--6">
-                                <div class="o-select-wrap">
-                                    <label class="o-select--label" for="shipping-address-country">Country</label>
-                                    <select aria-required="true" for="shipping-address-country">
-                                        <option value="singapore">Singapore</option>
-                                        <option value="united states">United States</option>
-                                        <option value="canada">Canada</option>
-                                    </select>
+                    <form>
+                        <div class="o-form--group">
+                            <h5 class="o-header">Contact information</h5>
+                            
+                            <div class="o-field--group">
+                                <div class="o-col--12">
+                                    <input placeholder="Email" data-autofocus="true" aria-required="true" size="30" type="email" name="checkout_email" id="checkout_email">
                                 </div>
                             </div>
-                            <div class="o-col--6">
-                                <input placeholder="Postal code" data-autofocus="true" aria-required="true" size="30" type="text" name="postal-code" id="postal-code">
-                            </div>
-                        </div>
-                        <div class="o-field--group">
-                            <div class="o-col--12">
-                                <input placeholder="Phone (required)" data-autofocus="true" aria-required="true" size="30" type="number" name="phone" id="phone">
-                            </div>
+
+                            <input type="checkbox" id="subscribe" name="groupname" value="Yes subscribe to newsletter">
+                            <label for="subscribe">Subscribe to our newsletter</label>
                         </div>
                         
-                        <div class="o-field--group o-form-checkbox">
-                            <input type="checkbox" id="save-info" value="Save information">
-                            <label for="save-info">Save this information for next time</label>
-                        </div>
+                        <div class="o-form--group u-mbn">
+                            <h5 class="o-header">Shipping address</h5>
 
-                        <div class="o-field--group u-clearfix">
-                            <a class="c-form--return" href="#">&#12296; Return to cart</a>
-                            <button class="c-form--next" id="jsShipping">Continue to shopping method</button>
-                        </div>
-                    </div>    
-                </form>
-                
-                <hr />
-                <footer>
-                    <ul>
-                        <li><a href="#">Refund policy</a></li>
-                        <li><a href="#">Privacy policy</a></li>
-                        <li><a href="#">Terms of service</a></li>
+                            <div class="o-field--group">
+                                <div class="o-col--6">
+                                    <input placeholder="First name" data-autofocus="true" aria-required="true" size="30" type="text" name="first-name" id="first-name">
+                                </div>
+                                <div class="o-col--6">
+                                    <input placeholder="Last name" data-autofocus="true" aria-required="true" size="30" type="text" name="last-name" id="last-name">
+                                </div>
+                            </div>
+                            <div class="o-field--group">
+                                <div class="o-col--12">
+                                    <input placeholder="Company (optional)" data-autofocus="true" aria-required="true" size="30" type="text" name="company" id="company">
+                                </div>
+                            </div>
+                            <div class="o-field--group">
+                                <div class="o-col--8">
+                                    <input placeholder="Address" data-autofocus="true" aria-required="true" size="30" type="text" name="address" id="address">
+                                </div>
+                                <div class="o-col--4">
+                                    <input placeholder="Apt, suite, etc. (optional)" data-autofocus="true" aria-required="true" size="30" type="text" name="Apt" id="apt">
+                                </div>
+                            </div>
+                            <div class="o-field--group">
+                                <div class="o-col--12">
+                                    <input placeholder="City" data-autofocus="true" aria-required="true" size="30" type="text" name="city" id="city">
+                                </div>
+                            </div>
+                            <div class="o-field--group">
+                                <div class="o-col--6">
+                                    <div class="o-select-wrap">
+                                        <label class="o-select--label" for="shipping-address-country">Country</label>
+                                        <select aria-required="true" for="shipping-address-country">
+                                            <option value="singapore">Singapore</option>
+                                            <option value="united states">United States</option>
+                                            <option value="canada">Canada</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="o-col--6">
+                                    <input placeholder="Postal code" data-autofocus="true" aria-required="true" size="30" type="text" name="postal-code" id="postal-code">
+                                </div>
+                            </div>
+                            <div class="o-field--group">
+                                <div class="o-col--12">
+                                    <input placeholder="Phone (required)" data-autofocus="true" aria-required="true" size="30" type="number" name="phone" id="phone">
+                                </div>
+                            </div>
+                            
+                            <div class="o-field--group o-form-checkbox">
+                                <input type="checkbox" id="save-info" value="Save information">
+                                <label for="save-info">Save this information for next time</label>
+                            </div>
+
+                            <div class="o-field--group u-clearfix">
+                                <a class="c-form--return" href="#">&#12296; Return to cart</a>
+                                <button class="c-form--next" id="jsShipping">Continue to shopping method</button>
+                            </div>
+                        </div>    
+                    </form>
+                    
+                    <hr />
+                    <footer>
+                        <ul>
+                            <li><a href="#">Refund policy</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Terms of service</a></li>
+                        </ul>
+                    </footer>
+                </div>
+
+                <!-- start: right column -->
+                <div class="o-col--5 c-cart--details">
+                    <ul class="c-cart--list">
+                        <li>
+                            <div class="c-cart--product">
+                                <div class="c-cart--product__img">
+                                    <img src="//via.placeholder.com/160x160/ffffff/333?text=Product" class="img-responsive" alt="">
+                                </div>
+
+                                <div class="c-cart--product__quantity">1</div>
+                            </div>
+                            <div class="c-cart--product__details">
+                                <div>
+                                    Boosted Mini S
+                                    <div class="c-cart--product__desc">NA / Ships in 7-9 weeks</div>
+                                </div>
+
+                                <div class="c-cart--product__price">
+                                    <strike>$1,990.00</strike>
+                                    $749.00
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="c-cart--product">
+                                <div class="c-cart--product__img">
+                                    <img src="//via.placeholder.com/160x160/ffffff/333?text=Product" class="img-responsive" alt="">
+                                </div>
+
+                                <div class="c-cart--product__quantity">1</div>
+                            </div>
+                            <div class="c-cart--product__details">
+                                <div>
+                                    Extended Range Battery Reservation
+                                </div>
+
+                                <div class="c-cart--product__price">$319.00</div>
+                            </div>
+                        </li>
                     </ul>
-                </footer>
-            </div>
 
-            <!-- start: right column -->
-            <div class="o-col--5 c-cart--details">
-                <ul class="c-cart--list">
-                    <li>
-                        <div class="c-cart--product">
-                            <div class="c-cart--product__img">
-                                <img src="//via.placeholder.com/160x160/ffffff/333?text=Product" class="img-responsive" alt="">
-                            </div>
+                    <hr>
 
-                            <div class="c-cart--product__quantity">1</div>
-                        </div>
-                        <div class="c-cart--product__details">
-                            <div>
-                                Boosted Mini S
-                                <div class="c-cart--product__desc">NA / Ships in 7-9 weeks</div>
-                            </div>
-
-                            <div class="c-cart--product__price">
-                                <strike>$1,990.00</strike>
-                                $749.00
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="c-cart--product">
-                            <div class="c-cart--product__img">
-                                <img src="//via.placeholder.com/160x160/ffffff/333?text=Product" class="img-responsive" alt="">
-                            </div>
-
-                            <div class="c-cart--product__quantity">1</div>
-                        </div>
-                        <div class="c-cart--product__details">
-                            <div>
-                                Extended Range Battery Reservation
-                            </div>
-
-                            <div class="c-cart--product__price">$319.00</div>
-                        </div>
-                    </li>
-                </ul>
-
-                <hr>
-
-            </div>
-        </section>
-    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 
 	<script src="js/app.min.js"></script>
 </body>
