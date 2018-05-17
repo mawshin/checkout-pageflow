@@ -16,12 +16,15 @@
 		height: 100%;
 		width: 500%;
 		border-left: 1px solid darken($grey, 15%);
+		z-index: -1;
 	}
 }
 
 .c-cart--list {
 	list-style: none;
 	padding-left: 0;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid darken($grey, 10%);
 
 	li {
 		@include cf;
@@ -98,5 +101,25 @@
 		display: block;
 		color: darken($grey, 20%);
 		font-size: 0.75rem;
+	}
+}
+
+.c-cart--notice {
+	@include mappy-bp(large) {
+		padding: 0.625rem;
+		font-size: 0.875rem;
+	}
+
+	border-radius: 6px;
+	background-color: white;
+	padding: 1rem;
+	font-size: 0.75rem;
+
+	ul {
+		margin-left: 1.25rem;
+
+		> li {
+			margin-bottom: 0.625rem;
+		}
 	}
 }
