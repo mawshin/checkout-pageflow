@@ -117,7 +117,7 @@ gulp.task('sass-prod', function () {
  * Minify custom js scripts
  */
 gulp.task('scripts', function () {
-    return gulp.src(['app/js/lib/jquery-1.12.4.min.js', 'app/js/lib/rem.js', 'app/js/init.js'])
+    return gulp.src(['app/js/lib/jquery-1.12.4.min.js', 'app/js/lib/jquery.validate.js', 'app/js/lib/rem.js', 'app/js/init.js'])
         .pipe(concat('app.min.js'))
         .pipe(gulp.dest('app/js/'));
 });
